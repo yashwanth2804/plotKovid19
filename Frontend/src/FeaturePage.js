@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Divider } from "antd";
-import logo from "./SVG/Features/captured.mp4";
+import logo from "./SVG/Features/C1.gif";
+import c2 from "./SVG/Features/C2.gif";
 import plot from "./SVG/Features/Plot.png";
 import speed from "./SVG/Features/Speed.png";
 import stats from "./SVG/Features/Stats.png";
@@ -41,15 +42,14 @@ const FeaturePage = () => {
               taken into consideration). This will also provides information
               even if user have multiple interactions with single victim.
             </p>{" "}
-            <video width={"900"} id="background-video" loop autoPlay>
-              <source src={logo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <img width={"900"} src={logo} alt="loading..." />
             <p>
               There is a speed factor,which will simulate the points faster by
               speeding up the time{" "}
             </p>
             <img width={"900"} src={speed} alt="loading..." />
+            <p></p>
+            <img width={"900"} src={c2} alt="loading..." />
           </Col>
           <Divider />
           <Col span={24}>
