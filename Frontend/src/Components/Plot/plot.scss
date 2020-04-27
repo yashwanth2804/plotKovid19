@@ -1,0 +1,105 @@
+.tagClass {
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 10px;
+  .ant-tag {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+  }
+  &:hover {
+    overflow-x: scroll;
+  }
+}
+
+.column_a {
+  box-shadow: 0 5px 30px -15px #50b3cc;
+}
+.column_b {
+  box-shadow: 0 5px 30px -15px #50b3cc;
+}
+.loadMore {
+  border-bottom: 1px solid #2f74f7;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.search-list_Plot {
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 0;
+  width: 100%;
+  line-height: 1.5715;
+  list-style: none;
+  position: absolute;
+  z-index: 1050;
+  box-sizing: border-box;
+  /* padding: 4px 0; */
+  /* overflow: hidden; */
+  /* font-size: 14px; */
+  /* font-variant: initial; */
+  background-color: white;
+  padding: 4px 10px;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.input {
+  background-color: #f5f8fb;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+  &:focus {
+    top: 3px;
+    box-shadow: none;
+  }
+}
+.model-map {
+  background-color: transparent;
+}
+.ant-modal-content,
+.ant-modal-body {
+  background-color: transparent;
+  padding: 0px;
+}
+/*
+ *  STYLE 3
+ */
+
+#style-3::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.plot-map {
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: 20px;
+  z-index: 10000;
+}
+
+.my-float {
+  margin-top: 22px;
+}

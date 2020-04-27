@@ -1,0 +1,88 @@
+.search-list_Settings {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0;
+  width: 100%;
+  line-height: 1.5715;
+  list-style: none;
+  position: absolute;
+  z-index: 1050;
+  box-sizing: border-box;
+  /* padding: 4px 0; */
+  /* overflow: hidden; */
+  /* font-size: 14px; */
+  /* font-variant: initial; */
+  background-color: #fff;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.inp_Settings {
+  height: 40px;
+  background-color: #f5f8fb;
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.select_Settings {
+  width: 100%;
+}
+.ant-select-selector {
+  background-color: #f5f8fb !important;
+}
+.ant-picker {
+  background-color: #f5f8fb;
+}
+.labels {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.btn_settings {
+  background-color: #f6ff7a;
+
+  box-shadow: 0 8px 6px -6px black !important;
+
+  cursor: pointer;
+  letter-spacing: 0.04rem;
+
+  position: relative;
+  font-weight: bold;
+  outline: none !important;
+  border: none !important;
+  //-webkit-box-shadow: none !important;
+  //box-shadow: none !important;
+  $dur: 0.3s;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform $dur ease-in;
+    mix-blend-mode: difference;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.56;
+  }
+  //box-shadow: 0 3px 0 0 $color-dark;
+  &:active {
+    top: 3px;
+    // box-shadow: none;
+  }
+}
+.btn:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  //box-shadow: none !important;
+}

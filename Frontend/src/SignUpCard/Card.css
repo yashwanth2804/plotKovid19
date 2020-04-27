@@ -1,0 +1,45 @@
+.card {
+  position: absolute;
+  width: 904px;
+  /* height: 315px; */
+  left: 185px;
+  top: 85px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px #fbff4e;
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    position: absolute;
+
+    left: 5%;
+    width: 90%;
+    top: 85px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px #fbff4e;
+  }
+}
+
+.card-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 56px;
+  margin-top: 10px;
+  /* margin-left: 15px; */
+  box-shadow: 0 3px 5px -3px #00000080;
+  text-align: center;
+}
+.card-text {
+  position: absolute;
+  width: 838px;
+
+  left: 31px;
+
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+.step2-body {
+  padding: 15px 35px;
+  font-size: 2rem;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1.5rem;
+    height: 45vh;
+    overflow-y: scroll;
+  }
+}
+.key {
+  color: #bd6969;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+u {
+  text-decoration: none;
+  border-bottom: 10px solid #3efff7b5;
+  cursor: pointer;
+  width: 260px;
+}
+.input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+  &:focus {
+    top: 3px;
+    box-shadow: none;
+  }
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+}
+input:focus {
+  border-color: green;
+}
+.ant-select-selector {
+  outline: none !important;
+  border-width: 0 0 2px !important;
+  border-color: blue !important;
+}
+.ant-select {
+  //background-color: red !important;
+}
+.ant-select-dropdown {
+  //background-color: red !important;
+}
+.row-odd {
+  background-color: whitesmoke;
+}
+.ant-divider-horizontal {
+  @media only screen and (max-width: 800px) {
+    // margin-top: 5px;
+  }
+}
+.card-title {
+  @media only screen and (max-width: 800px) {
+    font-size: 2rem;
+  }
+}
+.search-list {
+  @media only screen and (max-width: 800px) {
+    font-size: 1.5rem;
+    margin-left: 0;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+  cursor: pointer;
+  // display: none;
+  font-size: 1.2rem;
+  margin-left: 21%;
+  width: 40%;
+  line-height: 1.5715;
+  list-style: none;
+
+  position: absolute;
+  z-index: 1050;
+  box-sizing: border-box;
+  /* padding: 4px 0; */
+  /* overflow: hidden; */
+  /* font-size: 14px; */
+  /* font-variant: initial; */
+  background-color: #fff;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,25 @@
+.usercard {
+  //  box-shadow: 2px 2px 5px #ffec15ab;
+  box-shadow: 5px 0px 1px #ffec15ab;
+  background-color: #97dcb3e0;
+  color: black;
+  font-weight: bold;
+}
+.usercard-cols {
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+.usercard-bottom {
+  background-color: #97dcb39c;
+  box-shadow: 5px 0px 1px #ffec15ab;
+}
+
+.user-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 75vh;
+}
+
+.box-shadow {
+  box-shadow: 0 8px 15px -5px black, 0 -8px 15px -9px #00000082;
+}
