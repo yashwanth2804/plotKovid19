@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Divider } from "antd";
-import logo from "./SVG/Features/C1.gif";
-import c2 from "./SVG/Features/C2.gif";
+import logo from "./SVG/Features/c1.gif";
+import c2 from "./SVG/Features/c2.gif";
 import plot from "./SVG/Features/Plot.png";
 import speed from "./SVG/Features/Speed.png";
 import stats from "./SVG/Features/Stats.png";

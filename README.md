@@ -14,12 +14,12 @@ This page gives the covid-19 cases information about the searched place.This res
 
 This page gives the information whether the current(logged in) user have met with covid-19 victims/symptoms.This can be achieved by comparing users 'Google Timeline' data against the victim's timeline data, considering the both are only hours apart (time is taken into consideration). This will also provides information even if user have multiple interactions with single victim.
 
-![s](Frontend/src/SVG/Features/C1.gif)
+![s](Frontend/src/SVG/Features/c1.gif)
 
 There is a speed factor,which will simulate the points faster by speeding up the time
 ![s](Frontend/src/SVG/Features/Speed.png)
 
-![s](Frontend/src/SVG/Features/C2.gif)
+![s](Frontend/src/SVG/Features/c2.gif)
 
 ### **3.Stats**
 
