@@ -11,19 +11,19 @@ const RegisterPage = (props) => {
   const { appState, appDispatch } = useContext(appContext);
   useEffect(() => {
     const asyncFunction = async () => {
-      const userFromlocal = await localStorage.getItem("UserName");
+      // const userFromlocal = await localStorage.getItem("UserName");
       const width = window.innerWidth;
 
-      const g = userFromlocal === null ? "null" : userFromlocal;
+      // const g = userFromlocal === null ? "null" : userFromlocal;
 
-      if (g !== "null") {
-        appDispatch({
-          type: "LOG_IN",
-          payload: { name: userFromlocal, width: width },
-        });
-        props.history.push("/plot");
-      }
-
+      // if (g !== "null") {
+      //   appDispatch({
+      //     type: "LOG_IN",
+      //     payload: { name: userFromlocal, width: width },
+      //   });
+      //   props.history.push("/plot");
+      // }
+      props.history.push("/plot");
       appDispatch({ type: "SET_WINDOW_WIDTH", payload: { width: width } });
     };
 
