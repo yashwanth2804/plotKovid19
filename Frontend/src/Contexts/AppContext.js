@@ -49,7 +49,7 @@ const AppContextProvider = (props) => {
   };
 
   const renderIntersect = (f, id) => {
-    console.log("F ", f);
+    console.log("reender intersect ", f, id);
     var line1 = turf.lineString([
       [f[0].lat, f[0].lng],
       [f[1].lat, f[1].lng],

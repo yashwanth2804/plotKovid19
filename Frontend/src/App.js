@@ -59,6 +59,7 @@ const App = (props) => {
     <div>
       <Router>
         <Nav />
+
         <Switch>
           <Route exact path="/">
             <RegisterPage />

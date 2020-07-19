@@ -55,9 +55,9 @@ const Nav = (props) => {
   };
 
   useEffect(() => {
-    console.log("object", appState.isLoggedIn);
+    // console.log("object", appState.isLoggedIn);
     setIsLoggedIn(appState.isLoggedIn);
-  });
+  }, []);
 
   const checkLogin = async () => {
     //Greenhawk_Llama28
@@ -67,11 +67,11 @@ const Nav = (props) => {
     const resp = await axios.get("http://localhost:8080/app/login?" + params);
     console.log("CheckLogin", resp);
     if (resp.data !== "user_not_found") {
-      await localStorage.setItem("UserName", username);
-      await localStorage.setItem("MongoID", resp.data);
-      appDispatch({ type: "LOG_IN", payload: { name: username } });
-      setUsername("");
-      setPassword("");
+      // await localStorage.setItem("UserName", username);
+      // await localStorage.setItem("MongoID", resp.data);
+      // appDispatch({ type: "LOG_IN", payload: { name: username } });
+      // setUsername("");
+      // setPassword("");
       props.history.push("/plot");
     } else {
       setIsInvalidLogin(true);

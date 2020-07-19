@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Row, Col, Button, Collapse, Badge } from "antd";
 import Svg from "../../SVG/women";
 import "./intersectusercard.scss";
@@ -84,6 +84,23 @@ const IntersectUsercard = (props) => {
   //   });
   //   //this.props.renderIntersect(intersectionPoint, f);
   // };
+
+  useEffect(() => {
+    console.log(props);
+    console.log(props.intersectionlines);
+  }, []);
+
+  const yy = props.intersectionlines.map((f, i) => (
+    <Col
+      style={{ cursor: "pointer" }}
+      onClick={() => renderIntersect(f, "5e943e859cd2940053f51207")}
+      span={24}
+      key={i}
+    >
+      Plot Intersect {i + 1}
+    </Col>
+  ));
+
   return (
     <>
       <div style={{ marginBottom: "15px", marginRight: "10px" }}>
@@ -116,19 +133,20 @@ const IntersectUsercard = (props) => {
                     }
                     key="1"
                   >
-                    <Row>
+                    {/* <Row>
                       {props.intersectionlines.map((f, i) => (
                         // f.map((g) => <div>{g.lat}</div>)
                         <Col
                           style={{ cursor: "pointer" }}
-                          onClick={() => renderIntersect(f, props.id)}
+                          // onClick={() => renderIntersect(f, props.id)}
                           span={24}
                           key={i}
                         >
                           Plot Intersect {i + 1}
                         </Col>
                       ))}
-                    </Row>
+                    </Row> */}
+                    <Row>{yy}</Row>
                   </Panel>
                 </Collapse>
               </Col>
