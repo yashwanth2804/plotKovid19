@@ -10,7 +10,7 @@
     "@testing-library/user-event": "^7.1.2",
     "@turf/turf": "^5.1.6",
     "antd": "^4.1.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "leaflet": "^1.6.0",
     "leaflet-drift-marker": "^1.0.3",
     "lodash": "^4.17.15",
